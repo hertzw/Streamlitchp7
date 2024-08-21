@@ -7,6 +7,11 @@ from textblob import TextBlob
 import spacy
 import neattext as nt
 
+import en_core_web_sm
+
+#nlp = en_core_web_sm.load()
+
+
 # Viz Pkgs
 import matplotlib.pyplot as plt
 import matplotlib
@@ -45,6 +50,11 @@ def summarize_text(text, num_sentences=3):
 def text_analyzer(text):
     # import English library
     nlp = spacy.load('en_core_web_sm')
+
+
+
+
+
     # create an nlp object
     doc = nlp(text)
     #extract tokens and lemmas
